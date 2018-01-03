@@ -18,6 +18,10 @@ helpers do
     total_cost = items.collect { |item| item[:cost] * (item[:multiple] || 1) }.sum
     sprintf("$%0.02f", total_cost)
   end
+
+  def image_tag(filename)
+    %Q{<img src="/images/#{filename}">}
+  end
 end
 
 before /consolebox\/.*/ do
@@ -96,6 +100,12 @@ before 'consolebox/bom.html.slim' do
         :cost => 5.80
       },
       {
+        :link => 'http://amzn.to/2CmKzKj',
+        :title => 'HDMI Coupler',
+        :description => 'For connecting to the Pi to the screen controller board. You could use a regular HDMI cable instead, but it will take up more room inside the enclosure.',
+        :cost => 2.18
+      },
+      {
         :link => 'http://amzn.to/2qiBm4b',
         :title => 'Power Switch',
         :description => 'We need a way to turn everything on and off. I like a nice quality button so I went with this one, but this is one place where you could save money. You can find much more inexpensive switches that will do the job, but other than the controllers this is just about the only other thing you\'ll interact with on your box so why not make it a quality component? If you go with something else, make sure it\'s a "momentary" switch (meaning it\'s only ON while pushed).',
@@ -125,12 +135,12 @@ before 'consolebox/bom.html.slim' do
       {
         :link => 'http://amzn.to/2CjTjRi',
         :title => 'Solid Wood',
-        :description => 'This can be pretty much anything you want. You can get it locally at a <a href="https://www.homedepot.com/b/Lumber-Composites-Appearance-Boards-Planks-Softwood-Hardwood-Boards/Unfinished/N-5yc1vZchznZ1z0sfpa">home center</a>, or if you\'re lucky you\'ll have a real <a href="https://www.google.com/maps/search/hardwood+lumber">hardwood lumberyard nearby</a>. You can also buy it <a href="https://www.cookwoods.com">online</a> and will probably be your only option if you\'re looking for <a href="https://www.cookwoods.com/wood-by-species/purpleheart">something</a> <a href="https://www.cookwoods.com/wood-by-species/zebra">really</a> <a href="https://www.cookwoods.com/wood-by-species/ebony">exotic</a>. If you build your box just like mine you\'ll need about 3 board feet of wood (1 board foot is 12" x 12" x 1" thick). 3 board feet assumes no waste and you really know what you\'re doing. See the <a href="design.html">Designs</a> and <a href="construction.html">Construction</a> sections for how the box is built and you\'ll get an idea of how much to buy.'
+        :description => 'This can be pretty much anything you want. You can get it locally at a <a href="https://www.homedepot.com/b/Lumber-Composites-Appearance-Boards-Planks-Softwood-Hardwood-Boards/Unfinished/N-5yc1vZchznZ1z0sfpa">home center</a>, or if you\'re lucky you\'ll have a real <a href="https://www.google.com/maps/search/hardwood+lumber">hardwood lumberyard nearby</a>. You can also buy it <a href="https://www.cookwoods.com">online</a> and will probably be your only option if you\'re looking for <a href="https://www.cookwoods.com/wood-by-species/purpleheart">something</a> <a href="https://www.cookwoods.com/wood-by-species/zebra">really</a> <a href="https://www.cookwoods.com/wood-by-species/ebony">exotic</a>. If you build your box just like mine you\'ll need about 3 board feet of wood (1 board foot is 12" x 12" x 1" thick). 3 board feet assumes no waste and you really know what you\'re doing. See the <a href="design.html">Design</a> and <a href="construction.html">Construction</a> sections for how the box is built and you\'ll get an idea of how much to buy. There\'s more talk about wood selection in the <a href="design.html">Design</a> section.'
       },
       {
         :link => 'http://amzn.to/2EROosv',
         :title => 'Plywood',
-        :description => 'Because of how wood moves, you can\'t build a largish box completely out of solid wood&mdash;it will expand and contract as the seasons change and destroy itself before too long. To combat this tedency we only build the sides out of solid wood and make the top and bottom out of plywood. This means that technically the box will get taller and shorter throughout the seasons, but probably not enough that you\'ll notice. Since the top and bottom are plywood it will stay the same length and width. You\'ll need 2 square feet for the top and bottom and another 2 for the base that holds the controllers and pocket on the side. You can get plywood at your local home center, although this design calls for 1/2" thick which may not be available (3/4" is the default thickness for cabinets, which is what the home center lumber is meant for). You can buy it online but will be much cheaper at a local store (that link above is $25 per sheet, but I can get it locally for $9). And the bigger the sheet is, the cheaper it will be per square foot.'
+        :description => 'Because of how wood moves, you can\'t build a largish box completely out of solid wood&mdash;it will expand and contract as the seasons change and destroy itself before too long. Our box will have the top and bottom built from plywood covered by a thin veneer of the same wood as the sizes. You\'ll need 2 square feet for the top and bottom and another 2 for the base that holds the controllers and pocket on the side. This design calls for 1/2" plywood which may not be available at your local home center&mdash;they usually carry 3/4". You can buy it online but will be much cheaper at a local store (that link above is $25 per sheet, but I can get it locally for $9). And the bigger the sheet is, the cheaper it will be per square foot. Look for Baltic Birch if you can find it. If you like the look of it you could build the whole box out of plywood!'
       },
       {
         :link => 'http://amzn.to/2CN39fr',
