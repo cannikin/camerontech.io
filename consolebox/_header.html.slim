@@ -1,6 +1,11 @@
-header.c-fill-stat-a2.f.c-txt1.pt3.px3
-  div.mb1
+link(href="/stylesheets/consolebox.css" rel="stylesheet" type="text/css")
+
+header.c-fill-stat-a2.f.c-txt1.pt3
+  div.mb1.px3
     h2.f-title.mb1 Building the Console Box
     p.light A complete tutorial for building a Raspberry Pi-powered console and arcade emulator in a portable carrying case.
 
-  == render '_tabs.html.slim', :locals => { :tabs => @tabs, :current => current }
+  ul.pt2.px0.bps-px3.pb2.bps-pb0
+    - @tabs.each do |file, text|
+      li.light.block.bps-show-inline-block.py1.px3(class="#{'c-fill1 c-txt-stat-a2 medium' if file == current}")
+        a(href="#{file}.html" class="#{'c-txt1' unless file == current}")= text

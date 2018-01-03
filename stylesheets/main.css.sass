@@ -1,0 +1,32 @@
+$english_tea: ("type-font-title": ('Roboto Slab', 'Roboto', 'Helvetica Neue', sans-serif), "type-transform-title": normal, "type-font-body": ('Roboto', 'Helvetica Neue', sans-serif), "color-1": (#ec4b46, #d2322d, #94201c, #8c1410))
+
+@import 'english_tea'
+
+.site-header
+  font-family: 'Raleway', 'Helvetica Neue', sans-serif
+  text-transform: uppercase
+  img
+    height: 2.5rem
+    vertical-align: middle
+    margin-top: -0.5rem
+  span
+    color: #ffffff
+  .tech
+    font-weight: 900
+  .io
+    text-transform: lowercase
+  a:hover
+    opacity: 1
+
+.light
+  font-weight: 300
+
+a
+  color: map-get(map-get($colors-status, 'stat-a'), 2)
+  // anchor links that appear as normal titles
+  &.anchor
+    color: #000000
+    // hovering should show a '#' after the title to indicate you get a link
+    &:hover
+      &:after
+        content: ' #'
