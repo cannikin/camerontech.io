@@ -8,10 +8,18 @@ $english_tea: ("type-font-title": ('Roboto Slab', 'Roboto', 'Helvetica Neue', sa
   img
     height: 2.5rem
     vertical-align: middle
+    margin-top: -0.5rem
+  span
+    color: #ffffff
   .tech
     font-weight: 900
   .io
     text-transform: lowercase
+  a:hover
+    opacity: 1
+
+.light
+  font-weight: 300
 
 a
   color: map-get(map-get($colors-status, 'stat-a'), 2)
@@ -19,3 +27,12 @@ a
 .bom
   td:last-child
     vertical-align: middle
+
+.video
+  padding-bottom: 53.05%
+  padding-top: 25px
+  height: 0
+
+  iframe
+    width: 100%
+    height: 100%

@@ -1,0 +1,69 @@
+== render '_header.html.slim', :locals => { :current => :bom }
+
+/ electrical
+section.f
+  div.flex.flex-top.flex-stretch
+    div.up1.bps-up2-3.p3
+
+      h3.f-title.t6.pb1 Electronic Components
+      p.t3 Here's a price list for the electronic components behind (and including) the screen of your box. You'll require some version of (almost) every component below. See each item's description for alternate, sometimes less expensive, options. Prices are from Amazon.com as of January 2017.
+
+      table.bom.my3
+        tr
+          th.bold.left.pb1.bb Name &amp; Description
+          th.bold.right.pb1.bb Cost
+        - @bom[:electrical].each do |item|
+          tr
+            td.py1.pr2
+              a.bold(href=item[:link])= item[:title]
+              p== item[:description]
+            td.py1.right
+              = price(item)
+        tr
+          td.bold.pt1.bt Total
+          td.bold.pt1.bt.right
+            = total(@bom[:electrical])
+
+    div.hide.bps-show.bps-up3.c-fill2.p3
+      ul
+        / electrical
+        li.mb3
+          img(src="https://www.raspberrypi.org/app/uploads/2017/05/Raspberry-Pi-3-1-1619x1080.jpg")
+        li.mb3
+          img(src="https://images-na.ssl-images-amazon.com/images/I/61my9s87RvL._SL1200_.jpg")
+        li.mb3
+          img(src="https://images-na.ssl-images-amazon.com/images/I/71E-nIshQxL._SL1500_.jpg")
+        li.c-fill1.px3.mb3
+          img(src="https://images-na.ssl-images-amazon.com/images/I/71GCIPQyaGL._SL1180_.jpg")
+        li.c-fill1.py2.pr3.mb3
+          img(src="https://images-na.ssl-images-amazon.com/images/I/71bkN1q691L._AC_.jpg")
+        li.c-fill1.px6.mb3
+          img(src="https://images-na.ssl-images-amazon.com/images/I/51Ok3J1zt5L._SL1100_.jpg")
+        li.c-fill1.py3.px6.mb3
+          img(src="https://images-na.ssl-images-amazon.com/images/I/81CZ8LuBmiL._SL1500_.jpg")
+
+/ construction
+section.f.pb6
+  div.flex.flex-top.flex-stretch
+    div.up1.bps-up2-3.p3
+      h3.f-title.t6.pb1 Construction Components
+      p.t3 Here's everything needed to build the box itself. This is the easiest section to save money in. I went with solid brass hinges and locks but you could get something from Home Depot for a lot less. Of course, some of the construction steps may change significantly if you go with different hardware. I didn't bother breaking down costs here since it will vary greatly depending on the options you pick.
+
+      table.bom.my3
+        - @bom[:construction].each do |item|
+          tr
+            td.py1.pr2(colspan="2")
+              a.bold(href=item[:link])= item[:title]
+              p== item[:description]
+        tr
+          td.bold.pt1.bt Total
+          td.bold.pt1.bt.right $50 - ???
+
+    div.hide.bps-show.bps-up3.c-fill2.p3
+      ul
+        li.mb3
+          img(src="https://images-na.ssl-images-amazon.com/images/I/6140%2Bx%2BN9tL.jpg")
+        li.c-fill1.px3.mb3
+          img(src="https://images-na.ssl-images-amazon.com/images/I/616YnfeoA0L._SL1000_.jpg")
+        li.c-fill1.p6.mb3
+          img(src="https://images-na.ssl-images-amazon.com/images/I/517r3%2BGNa3L.jpg")

@@ -2,19 +2,29 @@ doctype html
 html
   head
     title= @page_title
-    link(href="http://fonts.googleapis.com/css?family=Roboto+Slab|Roboto:400,700|Raleway:300,900" rel="stylesheet" type="text/css")
+    link(href="http://fonts.googleapis.com/css?family=Roboto+Slab|Roboto:300,400,700|Raleway:300,900" rel="stylesheet" type="text/css")
     link(href="/stylesheets/consolebox.css" rel="stylesheet" type="text/css")
     link(href="/favicon.ico" rel="shortcut icon" type="image/x-icon")
     link(href="/favicon.ico" rel="icon" type="image/x-icon")
     meta(name="viewport" content="width=device-width,initial-scale=1")
+    script(src="https://www.googletagmanager.com/gtag/js?id=UA-164680-23" async)
+    javascript:
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-164680-23');
 
   body
-    header.site-header.mb2
-      h1.c-fill-stat-a2.p2.c-txt1.t10.flex.flex-middle.flex-center
+    header.site-header.c-fill-stat-a2.bb.c-b1.pt1
+      h1.p1.bps-p0.c-txt1.t8.bps-t10.center
+        a(href="/")
           img.mr1(src="/images/robot@2x.png")
           span.cameron Cameron
           span.tech Tech
           span.io .io
 
-    main.clearfix
+    main
       == yield
+
+    footer.center.light.f.p2.c-fill-stat-a2.c-txt1
+      | Copyright &copy;2018 Rob Cameron

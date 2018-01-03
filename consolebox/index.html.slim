@@ -1,43 +1,16 @@
-header.c-fill-stat-a2.f.c-txt1.px3
-  div
-    h2.f-title Console Box Tutorial
-    p Building a Raspberry Pi-powered console and arcade emulator in a portable carrying case.</p>
-
-  ul.pt2
-    li.inline-block.py1.px2.c-fill1.c-txt-stat-a2.bold
-      a(href="#") Introduction
-    li.inline-block.py1.px2
-      a.c-txt1(href="#") Bill of Materials
-    li.inline-block.py1.px2
-      a.c-txt1(href="#") Diagrams &amp; Files
-    li.inline-block.py1.px2
-      a.c-txt1(href="#") Construction
+== render '_header.html.slim', :locals => { :current => :index }
 
 section.f
-  div.flex.flex-top
-    div.up2-3.p3
+  div.flex.flex-top.flex-stretch
+    div.up1.bps-up2-3.p3
+      div.video.relative.mb3
+        iframe.absolute.pos-t0.pos-l0(width="560" height="315" src="https://www.youtube.com/embed/Hi_ApvuaFNI?rel=0&amp;showinfo=0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen)
 
-      h3.f-title.t6.pb1 Electronic Components
-      p.t3 Here's a price list for the electronic components behind (and including) the screen of your box. You'll require some version of (almost) every component below. See each item's description for alternate, sometimes less expensive, options. Prices are from Amazon.com as of January 2017.
+      h3.f-title.t6.pb1 Building the Console Box
+      p.t3 Body
 
-      table.bom.my3
-        tr
-          th.bold.left.pb1.bb Name &amp; Description
-          th.bold.right.pb1.bb Cost
-        - @bom.each do |item|
-          tr
-            td.py1.pr2
-              a.bold(href=item[:link])= item[:title]
-              p== item[:description]
-            td.py1.right
-              | $
-              = item[:cost]
-              = '/each' if item[:multiple]
-        tr
-          td.bold.pt1.bt Total
-          td.bold.pt1.bt
-            | $
-            = @bom.collect { |item| item[:cost] * (item[:multiple] || 1) }.sum
-
-    div.up3.c-fill2.p3.pt9
-      img(src="https://lorempixel.com/600/600")
+    div.hide.bps-show.bps-up3.c-fill2.p3
+      ul
+        / electrical
+        li.mb3
+          img(src="https://www.raspberrypi.org/app/uploads/2017/05/Raspberry-Pi-3-1-1619x1080.jpg")

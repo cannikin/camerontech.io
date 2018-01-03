@@ -1,7 +1,7 @@
 PATH
   remote: /Users/rob/Sites/workingnotworking/gems/english_tea
   specs:
-    english_tea (1.6.0)
+    english_tea (1.7.0)
 
 GEM
   remote: https://rubygems.org/
