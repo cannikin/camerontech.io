@@ -1,0 +1,20 @@
+doctype html
+html
+  head
+    title= @page_title
+    link(href="http://fonts.googleapis.com/css?family=Roboto+Slab|Roboto:400,700|Raleway:300,900" rel="stylesheet" type="text/css")
+    link(href="/stylesheets/consolebox.css" rel="stylesheet" type="text/css")
+    link(href="/favicon.ico" rel="shortcut icon" type="image/x-icon")
+    link(href="/favicon.ico" rel="icon" type="image/x-icon")
+    meta(name="viewport" content="width=device-width,initial-scale=1")
+
+  body
+    header.site-header.mb2
+      h1.c-fill-stat-a2.p2.c-txt1.t10.flex.flex-middle.flex-center
+          img.mr1(src="/images/robot@2x.png")
+          span.cameron Cameron
+          span.tech Tech
+          span.io .io
+
+    main.clearfix
+      == yield
