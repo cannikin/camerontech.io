@@ -1,4 +1,4 @@
-layout 'layout.html.slim'
+require 'json'
 
 # don't try to turn partials into real paths
 ignore /\/_.*/
@@ -6,6 +6,8 @@ ignore /\.sass-cache/
 ignore /.ruby-version/
 ignore /.git*/
 ignore /Gemfile.*/
+
+layout 'layout.html.slim'
 
 helpers do
   def price(item)
@@ -228,5 +230,17 @@ end
 
 before 'matt-40/index.html.erb' do
   layout 'photoswipe_layout.html.slim'
-  render :text => 'Hello'
+  @page_title = "Matt's 40th Birthday"
+  @images = [
+    {
+      :src => 'https://placekitten.com/1100/800',
+      :w => 600,
+      :h => 400
+    },
+    {
+      :src => 'https://placekitten.com/1200/900',
+      :w => 1200,
+      :h => 900
+    }
+  ]
 end

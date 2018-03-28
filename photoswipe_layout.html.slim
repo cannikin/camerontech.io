@@ -51,16 +51,14 @@ html
           div.pswp__caption
             div.pswp__caption__center
 
-    javascript:
-      var pswpElement = document.querySelectorAll('.pswp')[0];
-
-      #{yield}
-
-      var options = {
-        index: 0 // start at first slide
-      };
-
-      // Initializes and opens PhotoSwipe
-      var gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, items, options);
-      gallery.init();
-
+    script(type="text/javascript")
+      | var pswpElement = document.querySelectorAll('.pswp')[0];
+      |
+      | var items =
+      ==yield
+      |;
+      |
+      | var options = { index: 0 };
+      |
+      | var gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, items, options);
+      | gallery.init();
