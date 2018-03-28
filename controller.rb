@@ -233,14 +233,174 @@ before 'matt-40/index.html.erb' do
   @page_title = "Matt's 40th Birthday"
   @images = [
     {
-      :src => 'https://placekitten.com/1100/800',
-      :w => 600,
-      :h => 400
+      :src => '/images/matt-40/matt-40s-1.jpg',
+      :w => 667,
+      :h => 1000
     },
     {
-      :src => 'https://placekitten.com/1200/900',
-      :w => 1200,
-      :h => 900
+      :src => '/images/matt-40/matt-40s-2.jpg',
+      :w => 1000,
+      :h => 667
+    },
+    {
+      :src => '/images/matt-40/matt-40s-3.jpg',
+      :w => 667,
+      :h => 1000
+    },
+    {
+      :src => '/images/matt-40/matt-40s-4.jpg',
+      :w => 667,
+      :h => 1000
+    },
+    {
+      :src => '/images/matt-40/matt-40s-5.jpg',
+      :w => 667,
+      :h => 1000
+    },
+    {
+      :src => '/images/matt-40/matt-40s-6.jpg',
+      :w => 667,
+      :h => 1000
+    },
+    {
+      :src => '/images/matt-40/matt-40s-7.jpg',
+      :w => 1000,
+      :h => 667
+    },
+    {
+      :src => '/images/matt-40/matt-40s-8.jpg',
+      :w => 1000,
+      :h => 667
+    },
+    {
+      :src => '/images/matt-40/matt-40s-9.jpg',
+      :w => 1000,
+      :h => 667
+    },
+    {
+      :src => '/images/matt-40/matt-40s-10.jpg',
+      :w => 1000,
+      :h => 667
+    },
+    {
+      :src => '/images/matt-40/matt-40s-11.jpg',
+      :w => 667,
+      :h => 1000
+    },
+    {
+      :src => '/images/matt-40/matt-40s-12.jpg',
+      :w => 667,
+      :h => 1000
+    },
+    {
+      :src => '/images/matt-40/matt-40s-13.jpg',
+      :w => 1000,
+      :h => 667
+    },
+    {
+      :src => '/images/matt-40/matt-40s-14.jpg',
+      :w => 1000,
+      :h => 667
+    },
+    {
+      :src => '/images/matt-40/matt-40s-15.jpg',
+      :w => 1000,
+      :h => 667
+    },
+    {
+      :src => '/images/matt-40/matt-40s-16.jpg',
+      :w => 667,
+      :h => 1000
+    },
+    {
+      :src => '/images/matt-40/matt-40s-17.jpg',
+      :w => 1000,
+      :h => 667
+    },
+    {
+      :src => '/images/matt-40/matt-40s-18.jpg',
+      :w => 667,
+      :h => 1000
+    },
+    {
+      :src => '/images/matt-40/matt-40s-19.jpg',
+      :w => 1000,
+      :h => 667
+    },
+    {
+      :src => '/images/matt-40/matt-40s-20.jpg',
+      :w => 1000,
+      :h => 667
+    },
+    {
+      :src => '/images/matt-40/matt-40s-21.jpg',
+      :w => 667,
+      :h => 1000
+    },
+    {
+      :src => '/images/matt-40/matt-40s-22.jpg',
+      :w => 1000,
+      :h => 667
+    },
+    {
+      :src => '/images/matt-40/matt-40s-23.jpg',
+      :w => 667,
+      :h => 1000
+    },
+    {
+      :src => '/images/matt-40/matt-40s-24.jpg',
+      :w => 1000,
+      :h => 667
+    },
+    {
+      :src => '/images/matt-40/matt-40s-25.jpg',
+      :w => 667,
+      :h => 1000
+    },
+    {
+      :src => '/images/matt-40/matt-40s-26.jpg',
+      :w => 1000,
+      :h => 667
+    },
+    {
+      :src => '/images/matt-40/matt-40s-27.jpg',
+      :w => 1000,
+      :h => 667
+    },
+    {
+      :src => '/images/matt-40/matt-40s-28.jpg',
+      :w => 1000,
+      :h => 667
+    },
+    {
+      :src => '/images/matt-40/matt-40s-29.jpg',
+      :w => 1000,
+      :h => 667
+    },
+    {
+      :src => '/images/matt-40/matt-40s-30.jpg',
+      :w => 667,
+      :h => 1000
+    },
+    {
+      :src => '/images/matt-40/matt-40s-31.jpg',
+      :w => 667,
+      :h => 1000
+    },
+    {
+      :src => '/images/matt-40/matt-40s-32.jpg',
+      :w => 667,
+      :h => 1000
+    },
+    {
+      :src => '/images/matt-40/matt-40s-33.jpg',
+      :w => 1000,
+      :h => 667
+    },
+    {
+      :src => '/images/matt-40/matt-40s-34.jpg',
+      :w => 1000,
+      :h => 667
     }
   ]
 end
