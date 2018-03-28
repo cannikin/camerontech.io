@@ -1,12 +1,8 @@
-PATH
-  remote: /Users/rob/Sites/workingnotworking/gems/english_tea
-  specs:
-    english_tea (1.8.0)
-
 GEM
   remote: https://rubygems.org/
   specs:
     directory_watcher (1.4.1)
+    english_tea (1.14.0)
     ffi (1.9.18)
     rb-fsevent (0.10.2)
     rb-inotify (0.9.10)
@@ -31,7 +27,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  english_tea!
+  english_tea
   sass
   slim
   stasis

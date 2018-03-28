@@ -225,3 +225,8 @@ before 'console-box/bom.html.slim' do
     ]
   }
 end
+
+before 'matt-40/index.html.erb' do
+  layout 'photoswipe_layout.html.slim'
+  render :text => 'Hello'
+end
