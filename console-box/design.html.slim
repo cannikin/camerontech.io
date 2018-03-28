@@ -1,0 +1,91 @@
+== render '_header.html.slim', :locals => { :current => :design }
+
+section.f
+  div.flex.flex-top.flex-stretch
+    div.up1.bps-up2-3.p3
+      h3#sketchup.f-title.t8.pb1
+        a.anchor(href="#sketchup") Box Design
+      p.mb2 I laid out the construction of the box in <a href="https://sketchup.com">Sketchup</a>. There is a <a href="https://app.sketchup.com/app?hl=en">free version</a> which actually runs in the browser. After creating an account you can import files and view them. It's available in the <a href="https://3dwarehouse.sketchup.com/model/56387ed3-889a-47f5-9508-7e0a0a41d65d/Cameron-Tech-Console-Box">Sketchup 3D Warehouse</a> but here's the actual Sketchup file as well:
+      p.mb4
+        a(href="/downloads/console-box.skp")
+          == image_tag 'console-box/design/skp-icon.png', :class => 'mr1', :style => 'width: 32px'
+          | console-box.skp
+
+      p.mb2== image_tag('console-box/design/open.png')
+      p.mb2 You may not need to use the file at all since you only need a couple measurements which are illustrated here:
+      p.mb2== image_tag('console-box/design/top-dimensions.png')
+      p.mb2== image_tag('console-box/design/iso-dimensions.png')
+      p.mb2
+        | The top and bottom halves of the box are the same dimensions. The sides are 1/2" thick, the bottom and inserts are 1/2" (12mm if you're using Baltic Birch) plywood. The front panel and top level of the bottom insert is 1/8" (4mm) plywood, You can see in this exploded diagram that the sides sit on base that's a glued up sheet of plywood and thin veneer of the same wood the sides are made from.
+      p.mb2== image_tag('console-box/design/top-exploded-labeled.png')
+      p.mb2 You can buy veneer on its own but it won't match the wood that you build the sides from. I've got a bandsaw so I cut the veneer myself ("re-sawing") about 1/8" thick and then glued it to the plywood.
+      p.mb2 The bottom insert is made from several layers of plywood sandwiched together with each level milled a little differently in order to have the controller raised a little, a deep pocket for cables and accessories, and a lid for that pocket that sits even with the top of the controller pockets.
+      p.mb2== image_tag('console-box/design/bottom-exploded.png')
+      p.mb2
+        | These measurements don't really need to be
+        span.bold<> exact
+        | as long as you leave enough room for all of the electronic components to fit behind the front panel. You could probably lose an inch in both the width and height if you're careful about where you place your components during assembly. The real limitation to the size is fitting the speakers on either side of the screen, and then fitting the USB hub below the screen.
+      h4#sketchup.f-title.t4.pb1
+        a.anchor(href="#sketchup") CNC Files
+      p.mb2 Cutting the front panel is the part that a spent a lot of hand wringing when trying to figure out how to make it. I've got plenty of woodworking tools, but none of them would really help to create something with these smooth curves. Luckily I have a simple <a href="">CNC machine</a> that I got a couple of years ago which was perfectly suited to the job. You could also cut this part with a laser, but you'd end up with a lot of scorched wood and would need to paint the front panel to hide it. If you go with my recommended speakers then you'll need a small speaker baffle insert between the speaker and the back of the front panel.
+      p.mb2 Here are the SVG files and the <a href="">gcode</a> used to run the machine. Note that the front panel has 2 gcode files: one for cuts made with a 1/8" (0.125") bit and another for a cuts made with a 1/16" (0.0625") bit:
+      ul.mb3
+        li.mb1
+          a.mr2.nowrap>(href="/downloads/console-box/console-box_front-panel.svg")
+            == image_tag 'console-box/design/svg-icon.png', :class => 'mr1', :style => 'width: 32px'
+            | console-box_front-panel.svg
+          a.mr2.nowrap>(href="/downloads/console-box/console-box_front-panel-0.125.gcode")
+            == image_tag 'console-box/design/gcode-icon.png', :class => 'mr1', :style => 'width: 32px'
+            | console-box_front-panel-0.125.gcode
+          a.nowrap>(href="/downloads/console-box/console-box_front-panel-0.0625.gcode")
+            == image_tag 'console-box/design/gcode-icon.png', :class => 'mr1', :style => 'width: 32px'
+            | console-box_front-panel-0.0625.gcode
+        li.mb1
+          a.mr2.nowrap>(href="/downloads/console-box/console-box_bottom-layer1.svg")
+            == image_tag 'console-box/design/svg-icon.png', :class => 'mr1', :style => 'width: 32px'
+            | console-box_bottom-layer1.svg
+          a.nowrap>(href="/downloads/console-box/console-box_bottom-layer1.gcode")
+            == image_tag 'console-box/design/gcode-icon.png', :class => 'mr1', :style => 'width: 32px'
+            | console-box_bottom-layer1.gcode
+        li.mb1
+          a.mr2.nowrap>(href="/downloads/console-box/console-box_bottom-layer2.svg")
+            == image_tag 'console-box/design/svg-icon.png', :class => 'mr1', :style => 'width: 32px'
+            | console-box_bottom-layer2.svg
+          a.nowrap>(href="/downloads/console-box/console-box_bottom-layer2.gcode")
+            == image_tag 'console-box/design/gcode-icon.png', :class => 'mr1', :style => 'width: 32px'
+            | console-box_bottom-layer2.gcode
+        li.mb1
+          a.mr2.nowrap>(href="/downloads/console-box/console-box_bottom-layer3.svg")
+            == image_tag 'console-box/design/svg-icon.png', :class => 'mr1', :style => 'width: 32px'
+            | console-box_bottom-layer3.svg
+          a.nowrap>(href="/downloads/console-box/console-box_bottom-layer3.gcode")
+            == image_tag 'console-box/design/gcode-icon.png', :class => 'mr1', :style => 'width: 32px'
+            | console-box_bottom-layer3.gcode
+        li.mb1
+          a.mr2.nowrap>(href="/downloads/console-box/console-box_speaker-baffle.svg")
+            == image_tag 'console-box/design/svg-icon.png', :class => 'mr1', :style => 'width: 32px'
+            | console-box_speaker-baffle.svg
+          a.nowrap>(href="/downloads/console-box/console-box_speaker-baffle.gcode")
+            == image_tag 'console-box/design/gcode-icon.png', :class => 'mr1', :style => 'width: 32px'
+            | console-box_speaker-baffle.gcode
+
+      p.mb Don't have a CNC machine? I'm thinking about selling these parts myself...I'll update this section if/when I do. There are sites like <a href="https://100kgarages.com/">100k Garages</a> where you can find someone local to cut it for you.
+
+    div.hide.bps-show.bps-up3.c-fill2.p3
+      ul
+        li.mb3== image_tag('console-box/design/iso.png')
+        li.mb3== image_tag('console-box/design/xray.png')
+        li.mb3== image_tag('console-box/design/top-down.png')
+
+section.f
+  div.flex.flex-top.flex-stretch
+    div.up1.bps-up2-3.p3
+      h3#design.f-title.t8.pb1
+        a.anchor(href="#design") Electronics Design
+      p.t3 Coming soon...
+
+    div.hide.bps-show.bps-up3.c-fill2.p3
+      ul
+        / electrical
+        li.mb3
+          img(src="https://www.raspberrypi.org/app/uploads/2017/05/Raspberry-Pi-3-1-1619x1080.jpg")

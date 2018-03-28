@@ -1,0 +1,7 @@
+section.bps-mb20.bps-pb20
+  ul.flex.flex-top.px2.py1.bps-py0
+    - @pages.each do |page|
+      li.relative.up1.bps-up4.py1.bps-py4.bps-px2.center
+        a(href="#{page[:link]}")
+          span.absolute.pos-l0.pos-r0.z2.center.pos-ycenter.f.bold.t9.lh4.mx4.c-txt10= page[:title]
+          == image_tag page[:image], :class => 'trans2'

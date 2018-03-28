@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="256px" height="524px" viewBox="0 0 256 524" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>speaker baffle</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="speaker-baffle" stroke="#000000">
+            <circle id="bottom-left" cx="67.5" cy="417.5" r="4.5"></circle>
+            <circle id="bottom-right" cx="193.5" cy="417.5" r="4.5"></circle>
+            <circle id="top-right" opacity="0.719999969" cx="193.5" cy="291.5" r="4.5"></circle>
+            <circle id="top-left" cx="67.5" cy="291.5" r="4.5"></circle>
+            <circle id="Oval-3" cx="130" cy="354" r="71"></circle>
+            <path d="M185.526912,435 L74.5269119,435 L49,409.473088 L49,298.580736 L74.5807358,273 L185.473088,273 L211,298.526912 L211,409.526912 L185.526912,435 Z" id="Combined-Shape"></path>
+            <circle id="bottom-left" cx="67.5" cy="217.5" r="4.5"></circle>
+            <circle id="bottom-right" cx="193.5" cy="217.5" r="4.5"></circle>
+            <circle id="top-right" opacity="0.719999969" cx="193.5" cy="91.5" r="4.5"></circle>
+            <circle id="top-left" cx="67.5" cy="91.5" r="4.5"></circle>
+            <circle id="Oval-3" cx="130" cy="154" r="71"></circle>
+            <path d="M185.526912,235 L74.5269119,235 L49,209.473088 L49,98.5807358 L74.5807358,73 L185.473088,73 L211,98.5269119 L211,209.526912 L185.526912,235 Z" id="Combined-Shape"></path>
+        </g>
+    </g>
+</svg>

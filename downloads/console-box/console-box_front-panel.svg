@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1118px" height="524px" viewBox="0 0 1118 524" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>top</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="top" stroke="#000000">
+            <g id="lcd-window" transform="translate(565.000000, 241.251984) rotate(-360.000000) translate(-565.000000, -241.251984) translate(312.000000, 51.000000)">
+                <path d="M253,0 C350.055177,0 491.191324,6.2426006 495.720839,6.59556646 C500.250353,6.94853232 500.414203,8.61674688 500.694626,14.0155787 C500.97505,19.4144106 505.839181,121.605757 505.839181,190.446981 C505.839181,259.288206 501.097847,355.124991 500.694626,366.878384 C500.528834,371.711054 500.769104,374.066521 495.720839,374.298396 C485.266927,374.778562 351.215727,380.234406 253,380.234406 C154.784273,380.234406 14.5768246,374.499999 9.94757536,374.298396 C5.3183261,374.096794 5.22118181,371.998321 4.97378768,366.878384 C4.72639355,361.758447 0,262.061642 0,190.446981 C0,118.832321 4.63844088,21.124051 4.97378768,14.0155787 C5.20304821,9.15585715 5.47440459,6.82550955 9.94757536,6.59556646 C14.0705169,6.38362688 165.419889,0 253,0 Z" id="Color_Fill_1"></path>
+            </g>
+            <g id="left-speaker" transform="translate(72.000000, 101.000000)">
+                <g id="speaker-mount">
+                    <circle id="bottom-left" cx="5" cy="131" r="4.5"></circle>
+                    <circle id="bottom-right" cx="131" cy="131" r="4.5"></circle>
+                    <circle id="top-right" opacity="0.719999969" cx="131" cy="5" r="4.5"></circle>
+                    <circle id="top-left" cx="5" cy="5" r="4.5"></circle>
+                </g>
+                <g id="grille-lines" transform="translate(18.000000, 4.000000)">
+                    <path d="M49.5,0.5 L49.5,128.890031" id="Line"></path>
+                    <path d="M65.5,0.5 L65.5,128.890031" id="Line-Copy"></path>
+                    <path d="M33.5,0.5 L33.5,128.890031" id="Line-Copy-2"></path>
+                    <path d="M17.5,16.5 L17.5,113.582439" id="Line-Copy-5"></path>
+                    <path d="M81.5,16.5 L81.5,113.582439" id="Line-Copy-7"></path>
+                    <path d="M1.5,32.5488275 L1.5,96.6301201" id="Line-Copy-6"></path>
+                    <path d="M97.5,32.5488275 L97.5,96.6301201" id="Line-Copy-8"></path>
+                </g>
+            </g>
+            <g id="right-speaker" transform="translate(922.000000, 101.000000)">
+                <g id="speaker-mount">
+                    <circle id="bottom-left" cx="5" cy="131" r="4.5"></circle>
+                    <circle id="bottom-right" cx="132" cy="131" r="4.5"></circle>
+                    <circle id="top-right" opacity="0.719999969" cx="132" cy="5" r="4.5"></circle>
+                    <circle id="top-left" cx="5" cy="5" r="4.5"></circle>
+                </g>
+                <g id="grille-lines" transform="translate(18.000000, 4.000000)">
+                    <path d="M49.5,0.5 L49.5,128.890031" id="Line"></path>
+                    <path d="M65.5,0.5 L65.5,128.890031" id="Line-Copy"></path>
+                    <path d="M33.5,0.5 L33.5,128.890031" id="Line-Copy-2"></path>
+                    <path d="M17.5,16.5 L17.5,113.582439" id="Line-Copy-5"></path>
+                    <path d="M81.5,16.5 L81.5,113.582439" id="Line-Copy-7"></path>
+                    <path d="M1.5,32.5488275 L1.5,96.6301201" id="Line-Copy-6"></path>
+                    <path d="M97.5,32.5488275 L97.5,96.6301201" id="Line-Copy-8"></path>
+                </g>
+            </g>
+            <circle id="power-button" cx="140.5" cy="304.5" r="22.5"></circle>
+            <g id="usb-ports" transform="translate(468.000000, 469.000000)">
+                <rect id="4" x="156" y="0" width="38" height="17"></rect>
+                <rect id="3" x="104" y="0" width="38" height="17"></rect>
+                <rect id="2" x="52" y="0" width="38" height="17"></rect>
+                <rect id="1" x="0" y="0" width="38" height="17"></rect>
+            </g>
+            <circle id="volume" cx="990" cy="368" r="9"></circle>
+            <path d="M686.5,477.5 L704.5,477.5" id="usb-c-input"></path>
+            <g id="battery-lights" transform="translate(181.000000, 302.000000)">
+                <circle id="Oval-2" cx="32.5" cy="2.5" r="2.25"></circle>
+                <circle id="Oval-2" cx="22.5" cy="2.5" r="2.25"></circle>
+                <circle id="Oval-2" cx="12.5" cy="2.5" r="2.25"></circle>
+                <circle id="Oval-2" cx="2.5" cy="2.5" r="2.25"></circle>
+            </g>
+        </g>
+    </g>
+</svg>

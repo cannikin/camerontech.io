@@ -1,0 +1,83 @@
+== render '_header.html.slim', :locals => { :current => :index }
+
+section.f
+  div.flex.flex-top.flex-stretch
+    div.up1.bps-up2-3.p3
+      div.video.relative.mb3
+        iframe.absolute.pos-t0.pos-l0(width="560" height="315" src="https://www.youtube.com/embed/Hi_ApvuaFNI?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen)
+
+      h3#what.f-title.t8.pb2
+        a.anchor(href="#what") What is this?
+      p.mb3 I'm a child of the 80s. My first system was an Atari 2600. Then an NES, Sega Genesis, Gameboy and Super Nintendo. I've been able to play these games for years using an emulator on my computer, but I always wanted something a little more special. I couple of years ago I built a <a href="https://www.sudomod.com/hi/">Gameboy Zero</a> which runs all of these systems. But the screen is small, the battery only lasts a couple of hours, and it's really meant for one player.
+      p.mb3 The brains behind this system is the <a href="https://www.raspberrypi.org/products/raspberry-pi-3-model-b/">Raspberry Pi 3</a>. The Pi is a perfect computer for embedding in a system like this. It's plenty fast enough to run the systems I care about (up to a Nintendo 64, although some games run better than others). It's pretty energy efficient and allows about 8 hours of play with the battery I chose.
+      p.mb3 The interface for our system is <a href="https://retropie.org.uk/">RetroPie</a>. It is a version of the default Raspberry Pi operating system with a front-end for easy access to all of the emulators and games on your system. We'll customize this a bit to make it look good on our 4:3 screen (by default it assumes you're running on a 16:9 screen). You'll learn all you need to know to get it working later in this tutorial, but if you want an overview of what it does and how it works, here's the official beginner's guide video:
+      div.video.relative.mb3
+        iframe.absolute.pos-t0.pos-l0(width="560" height="315" src="https://www.youtube.com/embed/xvYX_7iRRI0?rel=0&amp;showinfo=0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen)
+
+    div.hide.bps-show.bps-up3.c-fill2.p3
+      ul
+        li.mb3== image_tag 'console-box/box6.jpg'
+        li.mb3== image_tag 'console-box/box1.jpg'
+        li.mb3== image_tag 'console-box/box2.jpg'
+        li.mb3== image_tag 'console-box/box5.jpg'
+
+section.f
+  div.flex.flex-top.flex-stretch
+    div.up1.bps-up2-3.p3
+      h3#inspiration.f-title.t8.pb2
+        a.anchor(href="#inspiration") Inspiration
+      p.mb2 I first saw the <a href="http://www.lovehulten.com/rkaidr.html">R-Kaid-R</a> several years ago when it was first discovered by the internet. A beautiful machine, but limited to joysticks which I was never a fan of. Plus it cost &euro;2,500 (around $3,000).
+      p.mb2 Recently the creator announced the <a href="http://www.lovehulten.com/cary42.html">Cary42</a> (for a mere &euro;2,600) which had a similar style, but for two players. Again, using joysticks.
+      p.mb2 However I loved the curved screen and retro style of the R-Kade-R and Cary42 and knew I wanted something like that in my own system. I also discovered a shader (more on those later) that would add scanlines to the screen to make it look just like it was running on an old CRT television.
+      p.mb2 About those joysticks...if I was going to make something like this then I wanted it to use what I used in my childhood&mdash;handheld controllers. My first designs included storage at the bottom for two each of Nintendo, Genesis 6-button and SNES controllers and enough USB ports to connect them all. The base was going to need to be almost 4 inches deep to accomodate everything, but I thought it was only my option.
+      p.mb2 Then <a href="http://www.8bitdo.com/">8bitdo</a> announced their <a href="http://www.8bitdo.com/sn30pro-sf30pro/">SF30 Pro and SN30 Pro</a> controllers.
+      p.mb2 These would allow me to simplify the design by an order of magnitude while providing a single controller that could handle any system I threw at it. They feature classic SNES style but with analog sticks and another pair of L and R shoulder buttons. They're Bluetooth (which the Raspberry Pi 3 supports natively) and also work with a USB cable if needed. In short, they did everything I needed and they looked and felt great, too. Did I mention I love these controllers?
+      p.mb2.center.content-image
+        == image_tag 'console-box/controller.jpg'
+
+    div.hide.bps-show.bps-up3.c-fill2.p3
+      ul
+        li.mb3== image_tag 'console-box/rkaidr.jpg'
+        li.mb3== image_tag 'console-box/cary42.jpg'
+
+section.f
+  div.flex.flex-top.flex-stretch
+    div.up1.bps-up2-3.p3
+      h3#prerequisites.f-title.t8.pb2
+        a.anchor(href="#prerequisites") Prerequisites
+      p.bold WARNING
+      p.mb2 This build involes the use of several tools which can seriously maim and/or kill you if you don't know what you're doing. Please don't make this project the first time you've ever used a table saw. Get acquainted with the safety features of your tools and make sure you know how to use them before tackling this project.
+      p.mb2
+        | I can't stress this enough:
+        span.bold< wear safety glasses
+        |. You've only got one pair of eyes and a
+        a<>(href="http://amzn.to/2CUOlvt") great pair
+        | of safety glasses are cheap and will last you a while (just don't set them down on the lenses, they can scratch easily).
+      p.mb2 This build is probably not best suited to someone who's never built anything from scratch before. This build will involve cutting wood, soldering electronics and using the command line in Linux. If you build this system the same way I do in the <a href="construction.html">Construction</a> section, here are the tools you'd need:
+      ul.mb2.list
+        li Table Saw
+        li Band Saw
+        li CNC machine
+        li Hand planes
+        li Chisels
+        li Files (rasps)
+        li Drill and bits (various sizes)
+        li Router and bits (various sizes)
+        li Sandpaper
+        li Wood glue
+        li Wood finish (oil and wax)
+        li Hot glue gun
+        li Wire cutters
+        li Wire strippers
+        li Soldering iron
+      p.mb2 You could get away with less than this set of tools but you'll need to find other techniques for completing some of the construction steps. You could build the box with a saw and nails if you wanted, which would cut out half the tools on the list! The soldering iron and wire tools will be required no matter what. If you've never soldered before there are plenty of <a href="https://www.youtube.com/results?search_query=soldering">tutorials</a> out there.
+      p.mb2 We'll also be making changes to RetroPie and the Raspberry Pi configuration which can be scary. There will be clear instructions walking you through each step so this should not be an issue and even if you completely botch something you can just reinstall from scratch and try again.
+      p.mb2 Ready to get started? Let's see what we parts we need...
+      p.mb2.right
+        a.t5(href="bom.html") Bill of Materials &raquo;
+
+    div.hide.bps-show.bps-up3.c-fill2.p3
+      ul
+        li.mb3== image_tag 'console-box/glasses.jpg'
+        li.mb3== image_tag 'console-box/tools.jpg'
+        li.mb3== image_tag 'console-box/soldering.jpg'
